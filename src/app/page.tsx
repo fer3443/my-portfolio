@@ -1,6 +1,7 @@
 import { Button, Photo, Socials, Stats } from "@/components";
 import { FiDownload } from "react-icons/fi";
 
+
 export default function HomePage() {
   return (
     <section className="h-full">

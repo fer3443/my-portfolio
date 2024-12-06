@@ -29,15 +29,15 @@ export const MobileNav = () => {
         <RiMenu3Fill className="text-[2rem] text-accent" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
-        <SheetTitle className="my-32 text-center text-2xl">
+        <SheetTitle className="my-28 text-center text-2xl">
           <Link href="/" onClick={() => setToggle(false)}>
             <h1 className="text-4xl font-semibold text-white">
-              Fer<span className="text-accent">.</span>
+              Fer <span className="text-accent">A.</span>
             </h1>
           </Link>
         </SheetTitle>
         <SheetDescription></SheetDescription>
-        <nav className="flex flex-col items-center gap-4 h-full">
+        <nav className="flex flex-col items-center gap-4 h-sreen">
           {links.map((link, index) => (
             <Link
               onClick={() => setToggle(false)}

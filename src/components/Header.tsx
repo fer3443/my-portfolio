@@ -10,7 +10,7 @@ export const Header = () => {
         {/* Logo */}
         <Link href="/">
           <h1 className="text-4xl font-semibold">
-            Fer<span className="text-accent">.</span>
+            Fer<span className="text-accent"> A.</span>
           </h1>
         </Link>
         {/* desktop nav */}

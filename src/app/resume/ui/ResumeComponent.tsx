@@ -81,7 +81,7 @@ const experience = {
 
 const education = {
   icon: "",
-  title: "My experience",
+  title: "My education",
   descrition:
     "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia accusamus aliquid, ex quidem commodi non.",
   items: [
