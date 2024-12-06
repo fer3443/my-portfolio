@@ -15,8 +15,7 @@ export default function HomePage() {
               <span className="text-accent">Fernando Arroyo</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium, dicta molestias hic quae eos vero!
+            With a strong focus on front-end development and a deep interest in UX/UI design, I am passionate about transforming ideas into functional and engaging digital experiences. I work with technologies such as React, Next.js, and TypeScript. I am always eager to learn and grow, taking every project to the next level. Explore my work and get to know more about me!
             </p>
             {/*botones y sociales */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
@@ -25,7 +24,7 @@ export default function HomePage() {
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
-                <span>Download CV</span>
+                <a href="/Fernando_Arroyo_Rodriguez-Cv.pdf" download="Fernando_Arroyo_CV.pdf">Download CV</a>
                 <FiDownload className="text-xl" />
               </Button>
               <div className="mb-8 xl:mb-0">

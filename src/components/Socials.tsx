@@ -7,8 +7,8 @@ interface Props {
 }
 
 const socials = [
-  {icon: <FaGithub/>, path:""},
-  {icon: <FaLinkedinIn/>, path:""},
+  {icon: <FaGithub/>, path:"https://github.com/fer3443"},
+  {icon: <FaLinkedinIn/>, path:"https://www.linkedin.com/in/fer3443in/"},
 ]
 
 export const Socials = ({containerStyles, iconStyles}:Props) => {
@@ -16,7 +16,7 @@ export const Socials = ({containerStyles, iconStyles}:Props) => {
     <div className={containerStyles}>
       {
         socials.map((item, index) => (
-          <Link key={index} href={item.path} className={iconStyles}>
+          <Link target="_blank" key={index} href={item.path} className={iconStyles}>
             {item.icon}
           </Link>
         ))
