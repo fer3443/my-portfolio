@@ -24,20 +24,20 @@ import {
 import { motion } from "framer-motion";
 
 const about = {
-  title: "About me",
+  title: "Acerca de Mi",
   description:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia accusamus aliquid, ex quidem commodi non.",
+    "¡Hola! Soy Fernando Arroyo, desarrollador full stack con un enfoque en el front end, aunque tengo experiencia completa en el backend. Mi stack principal es MERN (MongoDB, Express, React, Node.js), y a lo largo de los años he sumado herramientas como Next.js, Prisma, PostgreSQL y TypeScript.",
   info: [
     {
-      fieldName: "Name",
+      fieldName: "Nombre",
       fieldValue: "Fernando Arroyo",
     },
     {
-      fieldName: "Phone",
+      fieldName: "Teléfono",
       fieldValue: "(+54) 381 4168 878",
     },
     {
-      fieldName: "Experience",
+      fieldName: "Experiencia",
       fieldValue: "3+ Years",
     },
     {
@@ -46,33 +46,28 @@ const about = {
     },
     {
       fieldName: "Freelance",
-      fieldValue: "Available",
+      fieldValue: "Disponible",
     },
     {
-      fieldName: "Languages",
-      fieldValue: "English, Spanish",
+      fieldName: "Lenguajes",
+      fieldValue: "Inglés, Español",
     },
   ],
 };
 
 const experience = {
   icon: "",
-  title: "My experience",
+  title: "Mi experiencia",
   descrition:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia accusamus aliquid, ex quidem commodi non.",
+    "Tuve la oportunidad de trabajar de manera tanto individual como de manera colaborativa. Ambas siguen enriqueciendo mi crecimiento tanto personal como profesional",
   items: [
-    {
-      company: "Smart Solutions",
-      position: "Full Stack Developer",
-      duration: "2022 - Present",
-    },
     {
       company: "Freelance",
       position: "Full Stack Developer",
       duration: "2021 - Present",
     },
     {
-      company: "blabla bla",
+      company: "Smart Solutions",
       position: "Full Stack Developer",
       duration: "2022 - Present",
     },
@@ -81,9 +76,9 @@ const experience = {
 
 const education = {
   icon: "",
-  title: "My education",
+  title: "Mi educación",
   descrition:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia accusamus aliquid, ex quidem commodi non.",
+    "Echa un vistazo a al listado de certificaciones correspondientes a mi formación como Dev.",
   items: [
     {
       institution: "RollingCode School",
@@ -109,9 +104,9 @@ const education = {
 };
 
 const skills = {
-  title: "My skills",
+  title: "Mis habilidades",
   descrition:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia accusamus aliquid, ex quidem commodi non.",
+    "El listado actual de las tecnologías que manejo, a futuro seguirá creciendo!.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -180,10 +175,10 @@ export const ResumeComponent = () => {
           className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="experience">Experience</TabsTrigger>
-            <TabsTrigger value="education">Education</TabsTrigger>
-            <TabsTrigger value="skills">Skills</TabsTrigger>
-            <TabsTrigger value="about">About Me</TabsTrigger>
+            <TabsTrigger value="experience">Experiencia</TabsTrigger>
+            <TabsTrigger value="education">Educación</TabsTrigger>
+            <TabsTrigger value="skills">Habilidades</TabsTrigger>
+            <TabsTrigger value="about">Acerca de Mi</TabsTrigger>
           </TabsList>
           {/* Content */}
           <div className="min-h-[70vh] w-full">
@@ -241,14 +236,12 @@ export const ResumeComponent = () => {
                 </ScrollArea>
               </div>
             </TabsContent>
-            <TabsContent value="skills" className="w-full h-full">
+            <TabsContent value="skills" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <div>
                   <h3 className="text-4xl font-bold">{skills.title}</h3>
                   <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                     {skills.descrition}
                   </p>
-                </div>
                 <ul className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px]">
                   {skills.skillList.map((item, index) => (
                     <li key={index}>

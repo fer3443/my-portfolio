@@ -6,28 +6,28 @@ import Link from "next/link";
 const services = [
   {
     num: "01",
-    title: "Web Development",
+    title: "Desarrollo Web",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum a quae non harum beatae dolores!",
+      "Con más de tres años de experiencia en la creación de aplicaciones web, lading pages, ecommerce (tiendas online) y más, podemos llevar a cabo el desarrollo de tu idea, emprendimiento o marca a la web. Ya tienes tu página web y quieres un cambio? También puedo ayudarte.",
     href: "",
   },
   {
     num: "02",
     title: "UX/UI Design",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum a quae non harum beatae dolores!",
+      "Con conocimientos en diseño UX/UI, mi compromiso en hacer efectivo ese mensaje que quieres transimitir con tu emprendimiento o marca, es posible. Enfocandome en soluciones adaptadas al problema planteado. 'El diseño es una forma de comunicar'",
     href: "",
   },
   {
     num: "03",
-    title: "Web Development",
+    title: "Asistencia web.",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum a quae non harum beatae dolores!",
+      "Soporte y asistencia para cada proyecto realizado. Porque el desarrollo de una aplicación web ",
     href: "",
   },
   {
     num: "04",
-    title: "Web Development",
+    title: "SEO",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum a quae non harum beatae dolores!",
     href: "",
