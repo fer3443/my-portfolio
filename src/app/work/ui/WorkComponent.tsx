@@ -20,36 +20,36 @@ import Image from "next/image";
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "project 1",
+    category: "Frontend",
+    title: "Movil Renta",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique officia recusandae, earum ducimus perspiciatis molestias.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+      "Participe como desarrollador Frontend en la aplicación Movil Renta, un sitio enfacado en la renta de automoviles mediante reservas, con la integracion de Payway para el pago del servicio.",
+    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Typescript" },{ name: "Zustand"}],
     image: "/mockup-rentacar.png",
-    live: "/",
+    live: "https://renta-car-ten.vercel.app/",
     github: "",
   },
   {
     num: "02",
     category: "Full Stack",
-    title: "project 1",
+    title: "Comic Store",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique officia recusandae, earum ducimus perspiciatis molestias.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+      "En este proyecto participe tanto en el desarrollo Frontend, como Backend. Para la UI utilizamos componentes provistos por shadcn junto a tailwind y la incorporacion de MercadoPago para efectuar la compra de productos. Mi tareas como backender fueron realizar el crud de autenticación del usuario, con JWT, hasheo de informacion mediante bcrypt y el uso de cookies.",
+    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Shadcn" }, {name: "MongoDb"}, {name: "Zustand"}],
     image: "/mockup-rentacar.png",
     live: "/",
     github: "",
   },
   {
     num: "03",
-    category: "frontend",
-    title: "project 1",
+    category: "Full Stack",
+    title: "Arroyo Shop",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique officia recusandae, earum ducimus perspiciatis molestias.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+      "Tienda online, creada a partir del diseño de Tesla - Shop, como practica para el aprendizaje y perfeccionamiento de Next.js, con gran cantidad de componentes generados como server side, incorporacion de PayPal y zustand como gestor de estado global. Con Next Auth para la creacion y autenticacion de usuarios. Uso de ORM Prisma y como base de datos PostgresSQL.",
+    stack: [{ name: "Next.js" }, {name: "Zustand"},{name:"Prisma"},{name:"PostgresSql"}],
     image: "/mockup-rentacar.png",
     live: "/",
-    github: "",
+    github: "https://github.com/fer3443/arroyo-shop",
   },
 ];
 
@@ -79,7 +79,7 @@ export const WorkComponent = () => {
                 {project.num}
               </div>
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} project
+                {project.title} - {project.category}
               </h2>
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
