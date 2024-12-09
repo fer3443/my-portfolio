@@ -47,7 +47,7 @@ const projects = [
     description:
       "Tienda online, creada a partir del diseño de Tesla - Shop, como practica para el aprendizaje y perfeccionamiento de Next.js, con gran cantidad de componentes generados como server side, incorporacion de PayPal y zustand como gestor de estado global. Con Next Auth para la creacion y autenticacion de usuarios. Uso de ORM Prisma y como base de datos PostgresSQL.",
     stack: [{ name: "Next.js" }, {name: "Zustand"},{name:"Prisma"},{name:"PostgresSql"}],
-    image: "/mockup-rentacar.png",
+    image: "/mockup-arroyoshop.png",
     live: "/",
     github: "https://github.com/fer3443/arroyo-shop",
   },
