@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import { Header, PageTransition, StairTransition } from "@/components";
+import { Header, PageTransition, StairTransition, Toaster } from "@/components";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -65,6 +65,7 @@ export default function RootLayout({
         <Header />
         <StairTransition />
         <PageTransition>{children}</PageTransition>
+        <Toaster />
       </body>
     </html>
   );
