@@ -18,20 +18,20 @@ const services = [
       "Con conocimientos en diseño UX/UI, mi compromiso en hacer efectivo ese mensaje que quieres transimitir con tu emprendimiento o marca, es posible. Enfocandome en soluciones adaptadas al problema planteado. 'El diseño es una forma de comunicar'",
     href: "",
   },
-  {
-    num: "03",
-    title: "Asistencia web.",
-    description:
-      "Soporte y asistencia para cada proyecto realizado. Porque el desarrollo de una aplicación web ",
-    href: "",
-  },
-  {
-    num: "04",
-    title: "SEO",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum a quae non harum beatae dolores!",
-    href: "",
-  },
+  // {
+  //   num: "03",
+  //   title: "Asistencia web.",
+  //   description:
+  //     "Soporte y asistencia para cada proyecto realizado. Porque el desarrollo de una aplicación web ",
+  //   href: "",
+  // },
+  // {
+  //   num: "04",
+  //   title: "SEO",
+  //   description:
+  //     "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum a quae non harum beatae dolores!",
+  //   href: "",
+  // },
 ];
 
 export const ServicesComponent = () => {

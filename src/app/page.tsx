@@ -11,11 +11,12 @@ export default function HomePage() {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Full Stack Developer</span>
             <h1 className="h1 mb-6">
-              Hello I&apos;m <br />
+              {/* Hello I&apos;m <br /> */}
+              Hola soy <br/>
               <span className="text-accent">Fernando Arroyo</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-            With a strong focus on front-end development and a deep interest in UX/UI design, I am passionate about transforming ideas into functional and engaging digital experiences. I work with technologies such as React, Next.js, and TypeScript. I am always eager to learn and grow, taking every project to the next level. Explore my work and get to know more about me!
+            Con un fuerte enfoque en el desarrollo front-end y un profundo interés en el diseño UX/UI, me apasiona transformar ideas en experiencias digitales funcionales y atractivas. Trabajo con tecnologías como React, Next.js y TypeScript. Siempre estoy dispuesto a aprender y crecer, llevando cada proyecto al siguiente nivel. ¡Explora mi trabajo y conoce más sobre mí!
             </p>
             {/*botones y sociales */}
             <div className="flex flex-col xl:flex-row items-center gap-8">

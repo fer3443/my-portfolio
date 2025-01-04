@@ -26,8 +26,8 @@ const projects = [
       "Participe como desarrollador Frontend en la aplicación Movil Renta, un sitio enfacado en la renta de automoviles mediante reservas, con la integracion de Payway para el pago del servicio.",
     stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Typescript" },{ name: "Zustand"}],
     image: "/mockup-rentacar.png",
-    live: "https://renta-car-ten.vercel.app/",
-    github: "",
+    live: "https://car-movilrenta.vercel.app/home",
+    github: "https://github.com/fer3443",
   },
   {
     num: "02",
@@ -36,9 +36,9 @@ const projects = [
     description:
       "En este proyecto participe tanto en el desarrollo Frontend, como Backend. Para la UI utilizamos componentes provistos por shadcn junto a tailwind y la incorporacion de MercadoPago para efectuar la compra de productos. Mi tareas como backender fueron realizar el crud de autenticación del usuario, con JWT, hasheo de informacion mediante bcrypt y el uso de cookies.",
     stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Shadcn" }, {name: "MongoDb"}, {name: "Zustand"}],
-    image: "/mockup-rentacar.png",
-    live: "/",
-    github: "",
+    image: "/mockup_benemex.png",
+    live: "https://www.benemexcomicstoree.ar/",
+    github: "https://github.com/fer3443",
   },
   {
     num: "03",
@@ -84,7 +84,7 @@ export const WorkComponent = () => {
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
               {/* Stack */}
-              <ul className="flex gap-4">
+              <ul className="flex gap-4 flex-wrap md:flex-nowrap">
                 {project.stack.map((item, index) => (
                   <li key={index} className="text-xl text-accent">
                     {item.name}
