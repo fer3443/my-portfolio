@@ -1,0 +1,138 @@
+{
+  "HomePage": {
+    "title": {
+      "0": "Hola soy",
+      "1": "Fernando Arroyo"
+    },
+    "subtitle": "Desarrollador Full Stack",
+    "description": "Con un fuerte enfoque en el desarrollo front-end y un profundo interés en el diseño UX/UI, me apasiona transformar ideas en experiencias digitales funcionales y atractivas. Trabajo con tecnologías como React, Next.js y TypeScript. Siempre estoy dispuesto a aprender y crecer, llevando cada proyecto al siguiente nivel. ¡Explora mi trabajo y conoce más sobre mí!",
+    "downloadCv": "Descargar CV"
+  },
+  "ContactPage": {
+    "title": "Trabajemos juntos",
+    "description": "Tienes una idea en mente?, quieres que todos conozcan tu negocio, emprendimiento o marca en internet? o simplmente buscas automatizar tu trabajo. Ponte en contacto por cualquiera de estos medios. Estoy a tu disposición.",
+    "info": {
+      "phone": "Teléfono",
+      "email": "Correo Electrónico",
+      "address": "Ubicación"
+    },
+    "form": {
+      "placeHolders": {
+        "firstname": "Nombre",
+        "lastname": "Apellido",
+        "email": "Correo Electrónico",
+        "phone": "Teléfono",
+        "typeService": "Seleccione un servicio",
+        "message": "Escriba su mensaje aquí."
+      },
+      "selects": {
+        "typeServices": {
+          "webDevelopment": "Desarrollo Web",
+          "uxDesing": "Diseño UX/UI"
+        }
+      },
+      "validations": {
+        "firstName": {
+          "min": "El nombre debe llevar al menos 2 caracteres",
+          "max": "Demasiado extenso, el maximo son 30 caracteres"
+        },
+        "lastname": {
+          "min": "El apellido debe llevar al menos 2 caracteres",
+          "max": "Demasiado extenso, el maximo son 30 caracteres"
+        },
+        "email": "El correo electrónico es obligatorio",
+        "phone": {
+          "min": "El teléfono debe tener al menos 10 digitos",
+          "max": "El teléfono debe tener como maximo 20 digitos"
+        },
+        "message": {
+          "min": "El mensaje es demasiado corto escribe un poco más",
+          "max": "El máximo de caracteres es de 250"
+        }
+      },
+      "sendMessage": {
+        "sending": "Enviando...",
+        "send": "Enviar"
+      }
+    }
+  },
+  "ResumePage": {
+    "aboutMe": {
+      "title": "Acerca de Mi",
+      "description": "¡Hola! Soy Fernando Arroyo, desarrollador full stack con un enfoque en el front end, aunque tengo experiencia completa en el backend. Mi stack principal es MERN (MongoDB, Express, React, Node.js), y a lo largo de los años he sumado herramientas como Next.js, Prisma, PostgreSQL y TypeScript.",
+      "info": [
+        {
+          "fieldName": "Nombre",
+          "fieldValue": "Fernando Arroyo"
+        },
+        {
+          "fieldName": "Teléfono",
+          "fieldValue": "(+54) 381 4168 878"
+        },
+        {
+          "fieldName": "Experiencia",
+          "fieldValue": "3+ Años"
+        },
+        {
+          "fieldName": "Email",
+          "fieldValue": "fer334433@gmail.com"
+        },
+        {
+          "fieldName": "Freelance",
+          "fieldValue": "Disponible"
+        },
+        {
+          "fieldName": "Lenguajes",
+          "fieldValue": "Inglés, Español"
+        }
+      ]
+    },
+    "experience": {
+      "title": "Mi experiencia",
+      "description": "Tuve la oportunidad de trabajar de manera tanto individual como de manera colaborativa. Ambas siguen enriqueciendo mi crecimiento tanto personal como profesional",
+      "items": [
+        {
+          "company": "Freelance",
+          "position": "Full Stack Developer",
+          "duration": "2021 - Presente"
+        },
+        {
+          "company": "Smart Solutions",
+          "position": "Full Stack Developer",
+          "duration": "2022 - Presente"
+        }
+      ]
+    },
+    "education": {
+      "title": "Mi educación",
+      "description":
+        "Echa un vistazo a al listado de certificaciones correspondientes a mi formación como Dev.",
+      "items": [
+        {
+          "institution": "RollingCode School",
+          "degree": "Full Stack Developer Bootcamp",
+          "duration": "2021 - 2022"
+        },
+        {
+          "institution": "DevTalles",
+          "degree": "Certificado: Typescript",
+          "duration": "2024"
+        },
+        {
+          "institution": "DevTalles",
+          "degree": "Certificado: Next.js",
+          "duration": "2024"
+        },
+        {
+          "institution": "Codo A Codo",
+          "degree": "Certificado: UX Design",
+          "duration": "2023 - 2024"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Mis habilidades",
+      "description": "El listado actual de las tecnologías que manejo, a futuro seguirá creciendo!."
+    }
+  } 
+}

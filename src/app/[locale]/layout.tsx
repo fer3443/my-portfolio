@@ -3,6 +3,10 @@ import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Header, PageTransition, StairTransition, Toaster } from "@/components";
 
+import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { notFound } from "next/navigation";
+import { routing } from "@/i18n/routing";
+
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
@@ -37,7 +41,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Fernando Arroyo | Desarrollador Full Stack",
-    description: 
+    description:
       "Soy Fernando Arroyo, desarrollador full stack con experiencia en tecnologías modernas como React, Node.js, Next.js y MongoDB. Explora mi trabajo y proyectos.",
     url: "https://my-portfolio-fer-arroyo.vercel.app/",
     siteName: "Fernando Arroyo Portfolio",
@@ -54,18 +58,26 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-}: Readonly<{
+  params,
+}: {
   children: React.ReactNode;
-}>) {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`${jetbrainsMono.variable} antialiased`}>
-        <Header />
-        <StairTransition />
-        <PageTransition>{children}</PageTransition>
-        <Toaster />
+        <NextIntlClientProvider>
+          <Header />
+          <StairTransition />
+          <PageTransition>{children}</PageTransition>
+          <Toaster />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

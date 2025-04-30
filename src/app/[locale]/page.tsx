@@ -1,22 +1,25 @@
 import { Button, Photo, Socials, Stats } from "@/components";
+import { getTranslations } from "next-intl/server";
 import { FiDownload } from "react-icons/fi";
 
 
-export default function HomePage() {
+export default async function HomePage() {
+  const t = await getTranslations("HomePage");
+
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/*text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Full Stack Developer</span>
+            <span className="text-xl">{t("subtitle")}</span>
             <h1 className="h1 mb-6">
               {/* Hello I&apos;m <br /> */}
-              Hola soy <br/>
-              <span className="text-accent">Fernando Arroyo</span>
+              {t("title.0")} <br/>
+              <span className="text-accent">{t("title.1")}</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-            Con un fuerte enfoque en el desarrollo front-end y un profundo interés en el diseño UX/UI, me apasiona transformar ideas en experiencias digitales funcionales y atractivas. Trabajo con tecnologías como React, Next.js y TypeScript. Siempre estoy dispuesto a aprender y crecer, llevando cada proyecto al siguiente nivel. ¡Explora mi trabajo y conoce más sobre mí!
+            {t("description")}
             </p>
             {/*botones y sociales */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
@@ -25,7 +28,7 @@ export default function HomePage() {
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
-                <a href="/Fernando_Arroyo_Rodriguez-Cv.pdf" download="Fernando_Arroyo_CV.pdf">Download CV</a>
+                <a href="/Fernando_Arroyo_Rodriguez-Cv.pdf" download="Fernando_Arroyo_CV.pdf">{t("downloadCv")}</a>
                 <FiDownload className="text-xl" />
               </Button>
               <div className="mb-8 xl:mb-0">
