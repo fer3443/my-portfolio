@@ -1,6 +1,7 @@
 "use client";
 
 import {
+  LocaleSwitcher,
   Sheet,
   SheetContent,
   SheetDescription,
@@ -36,8 +37,9 @@ export const MobileNav = () => {
             </h1>
           </Link>
         </SheetTitle>
-        <SheetDescription></SheetDescription>
+        <SheetDescription aria-label="hidden"></SheetDescription>
         <nav className="flex flex-col items-center gap-4 h-sreen">
+          <LocaleSwitcher mobile={true}/>
           {links.map((link, index) => (
             <Link
               onClick={() => setToggle(false)}

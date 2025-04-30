@@ -8,6 +8,7 @@ export * from "./Socials";
 export * from "./Photo";
 export * from "./Stats";
 export * from "./WorkSliderBtns";
+export { LocaleSwitcher } from "./LocaleSwitcher";
 
 export * from "./ui/button";
 export * from "./ui/input";
