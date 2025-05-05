@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 import { Header, PageTransition, StairTransition, Toaster } from "@/components";
 
@@ -78,6 +79,7 @@ export default async function RootLayout({
           <StairTransition />
           <PageTransition>
             {children}
+            <SpeedInsights/>
             <Analytics />
           </PageTransition>
           <Toaster />
