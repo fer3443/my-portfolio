@@ -25,10 +25,11 @@ import { motion } from "framer-motion";
 import { FormValues, getFormSchema } from "@/types";
 import { sendEmail } from "@/actions";
 import { useToast } from "@/hooks/use-toast";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 
 export const ContactComponent = () => {
+  const locale = useLocale() as 'es' | 'en';
   const t =  useTranslations("ContactPage");
   const tr = useTranslations('ContactPage.form.validations')
   const { toast } = useToast();
@@ -63,16 +64,18 @@ export const ContactComponent = () => {
   ];
 
   async function onSubmit(values: FormValues) {
-    const resp = await sendEmail(values);
+    const resp = await sendEmail({values, locale});
     if(!resp.ok){
       toast({
         variant:"default",
-        title: `${resp.message}`
+        title: `${resp.message}`,
+        description:`${resp.message2}`
       })
     }else{
       toast({
         variant:"default",
-        title:`${resp.message}`
+        title:`${resp.message}`,
+        description:`${resp.message2}`
       })
       form.reset();
     }

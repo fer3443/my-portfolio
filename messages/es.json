@@ -105,8 +105,7 @@
     },
     "education": {
       "title": "Mi educación",
-      "description":
-        "Echa un vistazo a al listado de certificaciones correspondientes a mi formación como Dev.",
+      "description": "Echa un vistazo a al listado de certificaciones correspondientes a mi formación como Dev.",
       "items": [
         {
           "institution": "RollingCode School",
@@ -134,5 +133,88 @@
       "title": "Mis habilidades",
       "description": "El listado actual de las tecnologías que manejo, a futuro seguirá creciendo!."
     }
-  } 
+  },
+  "ServicesPage": {
+    "service": [
+      {
+        "num": "01",
+        "title": "Desarrollo Web",
+        "description": "Con más de tres años de experiencia en la creación de aplicaciones web, lading pages, ecommerce (tiendas online) y más, podemos llevar a cabo el desarrollo de tu idea, emprendimiento o marca a la web. Ya tienes tu página web y quieres un cambio? También puedo ayudarte.",
+        "href": ""
+      },
+      {
+        "num": "02",
+        "title": "UX/UI Design",
+        "description": "Con conocimientos en diseño UX/UI, mi compromiso en hacer efectivo ese mensaje que quieres transimitir con tu emprendimiento o marca, es posible. Enfocandome en soluciones adaptadas al problema planteado. 'El diseño es una forma de comunicar'",
+        "href": ""
+      },
+      {
+        "num": "03",
+        "title": "Asistencia web.",
+        "description": "Soporte y asistencia para cada proyecto realizado. Porque el desarrollo de una aplicación web no termina con la entrega del proyecto. Siempre estoy disponible para resolver cualquier duda o problema que pueda surgir.",
+        "href": ""
+      }
+    ]
+  },
+  "WorkPage": {
+    "projects": [
+      {
+        "num": "01",
+        "category": "Frontend",
+        "title": "Movil Renta",
+        "description": "Participe como desarrollador Frontend en la aplicación Movil Renta, un sitio enfacado en la renta de automoviles mediante reservas, con la integracion de Payway para el pago del servicio.",
+        "stack": [
+          { "name": "Next.js" },
+          { "name": "Tailwind.css" },
+          { "name": "Typescript" },
+          { "name": "Zustand" }
+        ],
+        "image": "/mockup-rentacar.png",
+        "live": "https://www.movilrenta.com.ar/es",
+        "github": "https://github.com/fer3443"
+      },
+      {
+        "num": "02",
+        "category": "Full Stack",
+        "title": "Comic Store",
+        "description": "En este proyecto participe tanto en el desarrollo Frontend, como Backend. Para la UI utilizamos componentes provistos por shadcn junto a tailwind y la incorporacion de MercadoPago para efectuar la compra de productos. Mi tareas como backender fueron realizar el crud de autenticación del usuario, con JWT, hasheo de informacion mediante bcrypt y el uso de cookies.",
+        "stack": [
+          { "name": "Next.js" },
+          { "name": "Tailwind.css" },
+          { "name": "Shadcn" },
+          { "name": "MongoDb" },
+          { "name": "Zustand" }
+        ],
+        "image": "/mockup_benemex.png",
+        "live": "https://www.benemexcomicstoree.ar/",
+        "github": "https://github.com/fer3443"
+      },
+      {
+        "num": "03",
+        "category": "Full Stack",
+        "title": "Arroyo Shop",
+        "description": "Tienda online, creada a partir del diseño de Tesla - Shop, como practica para el aprendizaje y perfeccionamiento de Next.js, con gran cantidad de componentes generados como server side, incorporacion de PayPal y zustand como gestor de estado global. Con Next Auth para la creacion y autenticacion de usuarios. Uso de ORM Prisma y como base de datos PostgresSQL.",
+        "stack": [
+          { "name": "Next.js" },
+          { "name": "Zustand" },
+          { "name": "Prisma" },
+          { "name": "PostgresSql" }
+        ],
+        "image": "/mockup-arroyoshop.png",
+        "live": "/",
+        "github": "https://github.com/fer3443/arroyo-shop"
+      }
+    ]
+  },
+  "sendEmails": {
+    "success":{
+      "message": "Su mensaje fue enviado con éxito",
+      "message2": "Pronto me pondré en contacto contigo"
+    },
+    "error":{
+      "message1": "Hubo un problema al enviar el mensaje, intente nuevamente",
+      "message2": "Internal server error",
+      "message3": "Por favor contacteme a traves de los otros medios"
+    }
+  }
 }

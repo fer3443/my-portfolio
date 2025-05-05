@@ -133,5 +133,88 @@
       "title": "My Skills",
       "description": "The current list of technologies I work with — and it will definitely keep growing!"
     }
+  },
+  "ServicesPage": {
+    "service": [
+      {
+        "num": "01",
+        "title": "Web Development",
+        "description": "With over three years of experience building web applications, landing pages, e-commerce sites, and more, we can bring your idea, venture, or brand to life on the web. Already have a website and looking for a refresh? I can help with that too.",
+        "href":""
+      },
+      {
+        "num": "02",
+        "title": "UX/UI Design",
+        "description": "With knowledge in UX/UI design, I’m committed to making your brand’s or venture’s message effective. I focus on crafting solutions tailored to the specific problem. 'Design is a way to communicate.'",
+        "href":""
+      },
+      {
+        "num": "03",
+        "title": "Web Assistance",
+        "description": "Support and assistance for every project delivered. Because the development of a web application doesn't end with the project's delivery. I’m always available to help resolve any questions or issues that may come up.",
+        "href": ""
+      }
+    ]
+  },
+  "WorkPage": {
+    "projects": [
+      {
+        "num": "01",
+        "category": "Frontend",
+        "title": "Movil Renta",
+        "description": "I participated as a Frontend developer in the Movil Renta application, a platform focused on car rentals through reservations, with Payway integration for payment processing.",
+        "stack": [
+          { "name": "Next.js" },
+          { "name": "Tailwind.css" },
+          { "name": "Typescript" },
+          { "name": "Zustand" }
+        ],
+        "image": "/mockup-rentacar.png",
+        "live": "https://www.movilrenta.com.ar/es",
+        "github": "https://github.com/fer3443"
+      },
+      {
+        "num": "02",
+        "category": "Full Stack",
+        "title": "Comic Store",
+        "description": "In this project, I worked on both the Frontend and Backend. For the UI, we used components provided by Shadcn along with Tailwind, and integrated MercadoPago to handle product purchases. On the backend, I implemented the user authentication CRUD using JWT, password hashing with bcrypt, and cookie handling.",
+        "stack": [
+          { "name": "Next.js" },
+          { "name": "Tailwind.css" },
+          { "name": "Shadcn" },
+          { "name": "MongoDb" },
+          { "name": "Zustand" }
+        ],
+        "image": "/mockup_benemex.png",
+        "live": "https://www.benemexcomicstoree.ar/",
+        "github": "https://github.com/fer3443"
+      },
+      {
+        "num": "03",
+        "category": "Full Stack",
+        "title": "Arroyo Shop",
+        "description": "Online store created as a practice project inspired by Tesla Shop, aiming to learn and master Next.js. Includes numerous server-side components, PayPal integration, and Zustand for global state management. Uses NextAuth for user registration and authentication, Prisma ORM, and PostgreSQL as the database.",
+        "stack": [
+          { "name": "Next.js" },
+          { "name": "Zustand" },
+          { "name": "Prisma" },
+          { "name": "PostgresSql" }
+        ],
+        "image": "/mockup-arroyoshop.png",
+        "live": "/",
+        "github": "https://github.com/fer3443/arroyo-shop"
+      }
+    ]
+  },
+  "sendEmails": {
+    "success":{
+      "message": "Your message was sent successfully",
+      "message2": "I will get in touch with you soon"
+    },
+    "error":{
+      "message1": "There was a problem sending the message, please try again",
+      "message2": "Internal server error",
+      "message3": "Please contact me through other available channels"
+    }
   }
 }
