@@ -19,35 +19,22 @@ import {
 } from "@/components";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { z } from "zod";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 import { motion } from "framer-motion";
-import { formSchema } from "@/types/zod.schema.interface";
+import { FormValues, getFormSchema } from "@/types";
 import { sendEmail } from "@/actions";
 import { useToast } from "@/hooks/use-toast";
+import { useLocale, useTranslations } from "next-intl";
 
-const info = [
-  {
-    icon: <FaPhoneAlt />,
-    title: "Phone",
-    description: "(+54) 381 4168 878",
-  },
-  {
-    icon: <FaEnvelope />,
-    title: "Email",
-    description: "fer334433@gmail.com",
-  },
-  {
-    icon: <FaMapMarkerAlt />,
-    title: "Address",
-    description: "Tucumán, Argentina",
-  },
-];
+
 export const ContactComponent = () => {
+  const locale = useLocale() as 'es' | 'en';
+  const t =  useTranslations("ContactPage");
+  const tr = useTranslations('ContactPage.form.validations')
   const { toast } = useToast();
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const form = useForm<FormValues>({
+    resolver: zodResolver(getFormSchema(tr)),
     defaultValues: {
       firstName: "",
       lastName: "",
@@ -58,17 +45,37 @@ export const ContactComponent = () => {
     },
   });
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
-    const resp = await sendEmail(values);
+  const info = [
+    {
+      icon: <FaPhoneAlt />,
+      title: t("info.phone"),
+      description: "(+54) 381 4168 878",
+    },
+    {
+      icon: <FaEnvelope />,
+      title: t("info.email"),
+      description: "fer334433@gmail.com",
+    },
+    {
+      icon: <FaMapMarkerAlt />,
+      title: t("info.address"),
+      description: "Tucumán, Argentina",
+    },
+  ];
+
+  async function onSubmit(values: FormValues) {
+    const resp = await sendEmail({values, locale});
     if(!resp.ok){
       toast({
         variant:"default",
-        title: `${resp.message}`
+        title: `${resp.message}`,
+        description:`${resp.message2}`
       })
     }else{
       toast({
         variant:"default",
-        title:`${resp.message}`
+        title:`${resp.message}`,
+        description:`${resp.message2}`
       })
       form.reset();
     }
@@ -92,12 +99,9 @@ export const ContactComponent = () => {
                 onSubmit={form.handleSubmit(onSubmit)}
                 className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
               >
-                <h3 className="text-4xl text-accent">Trabajemos juntos</h3>
+                <h3 className="text-4xl text-accent">{t("title")}</h3>
                 <p className="text-white/60">
-                  Tienes una idea en mente?, quieres que todos conozcan tu
-                  negocio, emprendimiento o marca en internet? o simplmente
-                  buscas automatizar tu trabajo. Ponte en contacto por
-                  cualquiera de estos medios. Estoy a tu disposición.
+                  {t("description")}
                 </p>
                 {/*inputs */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -108,7 +112,7 @@ export const ContactComponent = () => {
                       <FormItem>
                         <FormControl>
                           <Input
-                            placeholder="Nombre"
+                            placeholder={t("form.placeHolders.firstname")}
                             {...field}
                             className="w-full"
                           />
@@ -124,7 +128,7 @@ export const ContactComponent = () => {
                       <FormItem>
                         <FormControl>
                           <Input
-                            placeholder="Apellido"
+                            placeholder={t("form.placeHolders.lastname")}
                             {...field}
                             className="w-full"
                           />
@@ -140,7 +144,7 @@ export const ContactComponent = () => {
                       <FormItem>
                         <FormControl>
                           <Input
-                            placeholder="Correo electronico"
+                            placeholder={t("form.placeHolders.email")}
                             {...field}
                             className="w-full"
                           />
@@ -156,7 +160,7 @@ export const ContactComponent = () => {
                       <FormItem>
                         <FormControl>
                           <Input
-                            placeholder="Teléfono"
+                            placeholder={t("form.placeHolders.phone")}
                             {...field}
                             className="w-full"
                           />
@@ -181,11 +185,11 @@ export const ContactComponent = () => {
                         </SelectTrigger>
                         <SelectContent>
                           <SelectGroup>
-                            <SelectLabel>Seleccione un servicio</SelectLabel>
+                            <SelectLabel>{t("form.placeHolders.typeService")}</SelectLabel>
                             <SelectItem value="developer">
-                              Web Developer
+                              {t('form.selects.typeServices.webDevelopment')}
                             </SelectItem>
-                            <SelectItem value="design">UX Design</SelectItem>
+                            <SelectItem value="design">{t('form.selects.typeServices.uxDesing')}</SelectItem>
                           </SelectGroup>
                         </SelectContent>
                       </Select>
@@ -202,7 +206,7 @@ export const ContactComponent = () => {
                       <FormControl>
                         <Textarea
                           className="h-[200px]"
-                          placeholder="Escriba su mensaje aquí."
+                          placeholder={t("form.placeHolders.message")}
                           {...field}
                         />
                       </FormControl>
@@ -212,7 +216,7 @@ export const ContactComponent = () => {
                 />
                 {/*btn */}
                 <Button type="submit" size="md" className="max-w-40" disabled={form.formState.isSubmitting}>
-                  {form.formState.isSubmitting ? "Enviando..." : "Enviar"}
+                  {form.formState.isSubmitting ? t("form.sendMessage.sending") : t("form.sendMessage.send")}
                 </Button>
               </form>
             </Form>

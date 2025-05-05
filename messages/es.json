@@ -1,0 +1,220 @@
+{
+  "HomePage": {
+    "title": {
+      "0": "Hola soy",
+      "1": "Fernando Arroyo"
+    },
+    "subtitle": "Desarrollador Full Stack",
+    "description": "Con un fuerte enfoque en el desarrollo front-end y un profundo interés en el diseño UX/UI, me apasiona transformar ideas en experiencias digitales funcionales y atractivas. Trabajo con tecnologías como React, Next.js y TypeScript. Siempre estoy dispuesto a aprender y crecer, llevando cada proyecto al siguiente nivel. ¡Explora mi trabajo y conoce más sobre mí!",
+    "downloadCv": "Descargar CV"
+  },
+  "ContactPage": {
+    "title": "Trabajemos juntos",
+    "description": "Tienes una idea en mente?, quieres que todos conozcan tu negocio, emprendimiento o marca en internet? o simplmente buscas automatizar tu trabajo. Ponte en contacto por cualquiera de estos medios. Estoy a tu disposición.",
+    "info": {
+      "phone": "Teléfono",
+      "email": "Correo Electrónico",
+      "address": "Ubicación"
+    },
+    "form": {
+      "placeHolders": {
+        "firstname": "Nombre",
+        "lastname": "Apellido",
+        "email": "Correo Electrónico",
+        "phone": "Teléfono",
+        "typeService": "Seleccione un servicio",
+        "message": "Escriba su mensaje aquí."
+      },
+      "selects": {
+        "typeServices": {
+          "webDevelopment": "Desarrollo Web",
+          "uxDesing": "Diseño UX/UI"
+        }
+      },
+      "validations": {
+        "firstName": {
+          "min": "El nombre debe llevar al menos 2 caracteres",
+          "max": "Demasiado extenso, el maximo son 30 caracteres"
+        },
+        "lastname": {
+          "min": "El apellido debe llevar al menos 2 caracteres",
+          "max": "Demasiado extenso, el maximo son 30 caracteres"
+        },
+        "email": "El correo electrónico es obligatorio",
+        "phone": {
+          "min": "El teléfono debe tener al menos 10 digitos",
+          "max": "El teléfono debe tener como maximo 20 digitos"
+        },
+        "message": {
+          "min": "El mensaje es demasiado corto escribe un poco más",
+          "max": "El máximo de caracteres es de 250"
+        }
+      },
+      "sendMessage": {
+        "sending": "Enviando...",
+        "send": "Enviar"
+      }
+    }
+  },
+  "ResumePage": {
+    "aboutMe": {
+      "title": "Acerca de Mi",
+      "description": "¡Hola! Soy Fernando Arroyo, desarrollador full stack con un enfoque en el front end, aunque tengo experiencia completa en el backend. Mi stack principal es MERN (MongoDB, Express, React, Node.js), y a lo largo de los años he sumado herramientas como Next.js, Prisma, PostgreSQL y TypeScript.",
+      "info": [
+        {
+          "fieldName": "Nombre",
+          "fieldValue": "Fernando Arroyo"
+        },
+        {
+          "fieldName": "Teléfono",
+          "fieldValue": "(+54) 381 4168 878"
+        },
+        {
+          "fieldName": "Experiencia",
+          "fieldValue": "3+ Años"
+        },
+        {
+          "fieldName": "Email",
+          "fieldValue": "fer334433@gmail.com"
+        },
+        {
+          "fieldName": "Freelance",
+          "fieldValue": "Disponible"
+        },
+        {
+          "fieldName": "Lenguajes",
+          "fieldValue": "Inglés, Español"
+        }
+      ]
+    },
+    "experience": {
+      "title": "Mi experiencia",
+      "description": "Tuve la oportunidad de trabajar de manera tanto individual como de manera colaborativa. Ambas siguen enriqueciendo mi crecimiento tanto personal como profesional",
+      "items": [
+        {
+          "company": "Freelance",
+          "position": "Full Stack Developer",
+          "duration": "2021 - Presente"
+        },
+        {
+          "company": "Smart Solutions",
+          "position": "Full Stack Developer",
+          "duration": "2022 - Presente"
+        }
+      ]
+    },
+    "education": {
+      "title": "Mi educación",
+      "description": "Echa un vistazo a al listado de certificaciones correspondientes a mi formación como Dev.",
+      "items": [
+        {
+          "institution": "RollingCode School",
+          "degree": "Full Stack Developer Bootcamp",
+          "duration": "2021 - 2022"
+        },
+        {
+          "institution": "DevTalles",
+          "degree": "Certificado: Typescript",
+          "duration": "2024"
+        },
+        {
+          "institution": "DevTalles",
+          "degree": "Certificado: Next.js",
+          "duration": "2024"
+        },
+        {
+          "institution": "Codo A Codo",
+          "degree": "Certificado: UX Design",
+          "duration": "2023 - 2024"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Mis habilidades",
+      "description": "El listado actual de las tecnologías que manejo, a futuro seguirá creciendo!."
+    }
+  },
+  "ServicesPage": {
+    "service": [
+      {
+        "num": "01",
+        "title": "Desarrollo Web",
+        "description": "Con más de tres años de experiencia en la creación de aplicaciones web, lading pages, ecommerce (tiendas online) y más, podemos llevar a cabo el desarrollo de tu idea, emprendimiento o marca a la web. Ya tienes tu página web y quieres un cambio? También puedo ayudarte.",
+        "href": ""
+      },
+      {
+        "num": "02",
+        "title": "UX/UI Design",
+        "description": "Con conocimientos en diseño UX/UI, mi compromiso en hacer efectivo ese mensaje que quieres transimitir con tu emprendimiento o marca, es posible. Enfocandome en soluciones adaptadas al problema planteado. 'El diseño es una forma de comunicar'",
+        "href": ""
+      },
+      {
+        "num": "03",
+        "title": "Asistencia web.",
+        "description": "Soporte y asistencia para cada proyecto realizado. Porque el desarrollo de una aplicación web no termina con la entrega del proyecto. Siempre estoy disponible para resolver cualquier duda o problema que pueda surgir.",
+        "href": ""
+      }
+    ]
+  },
+  "WorkPage": {
+    "projects": [
+      {
+        "num": "01",
+        "category": "Frontend",
+        "title": "Movil Renta",
+        "description": "Participe como desarrollador Frontend en la aplicación Movil Renta, un sitio enfacado en la renta de automoviles mediante reservas, con la integracion de Payway para el pago del servicio.",
+        "stack": [
+          { "name": "Next.js" },
+          { "name": "Tailwind.css" },
+          { "name": "Typescript" },
+          { "name": "Zustand" }
+        ],
+        "image": "/mockup-rentacar.png",
+        "live": "https://www.movilrenta.com.ar/es",
+        "github": "https://github.com/fer3443"
+      },
+      {
+        "num": "02",
+        "category": "Full Stack",
+        "title": "Comic Store",
+        "description": "En este proyecto participe tanto en el desarrollo Frontend, como Backend. Para la UI utilizamos componentes provistos por shadcn junto a tailwind y la incorporacion de MercadoPago para efectuar la compra de productos. Mi tareas como backender fueron realizar el crud de autenticación del usuario, con JWT, hasheo de informacion mediante bcrypt y el uso de cookies.",
+        "stack": [
+          { "name": "Next.js" },
+          { "name": "Tailwind.css" },
+          { "name": "Shadcn" },
+          { "name": "MongoDb" },
+          { "name": "Zustand" }
+        ],
+        "image": "/mockup_benemex.png",
+        "live": "https://www.benemexcomicstoree.ar/",
+        "github": "https://github.com/fer3443"
+      },
+      {
+        "num": "03",
+        "category": "Full Stack",
+        "title": "Arroyo Shop",
+        "description": "Tienda online, creada a partir del diseño de Tesla - Shop, como practica para el aprendizaje y perfeccionamiento de Next.js, con gran cantidad de componentes generados como server side, incorporacion de PayPal y zustand como gestor de estado global. Con Next Auth para la creacion y autenticacion de usuarios. Uso de ORM Prisma y como base de datos PostgresSQL.",
+        "stack": [
+          { "name": "Next.js" },
+          { "name": "Zustand" },
+          { "name": "Prisma" },
+          { "name": "PostgresSql" }
+        ],
+        "image": "/mockup-arroyoshop.png",
+        "live": "/",
+        "github": "https://github.com/fer3443/arroyo-shop"
+      }
+    ]
+  },
+  "sendEmails": {
+    "success":{
+      "message": "Su mensaje fue enviado con éxito",
+      "message2": "Pronto me pondré en contacto contigo"
+    },
+    "error":{
+      "message1": "Hubo un problema al enviar el mensaje, intente nuevamente",
+      "message2": "Internal server error",
+      "message3": "Por favor contacteme a traves de los otros medios"
+    }
+  }
+}
