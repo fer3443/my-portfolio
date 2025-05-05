@@ -10,20 +10,20 @@ import {
 } from "@/components";
 import { RiMenu3Fill } from "react-icons/ri";
 import { usePathname } from "next/navigation";
-import Link from "next/link";
+
 import { useState } from "react";
+import Link from "next/link";
 
-const links = [
-  { name: "home", path: "/" },
-  { name: "services", path: "/services" },
-  { name: "resume", path: "/resume" },
-  { name: "work", path: "/work" },
-  { name: "contact", path: "/contact" },
-];
-
-export const MobileNav = () => {
+export const MobileNav = ({locale}:{locale:'es' |'en'}) => {
   const [toggle, setToggle] = useState<boolean>(false);
   const pathname = usePathname();
+  const links = [
+    { name_es: "Home" ,name_en: "home", path: `/${locale}` },
+    { name_es: "Servicios" ,name_en: "services", path: `/${locale}/services` },
+    { name_es: "Resumen" ,name_en: "resume", path: `/${locale}/resume` },
+    { name_es: "Trabajos" ,name_en: "work", path: `/${locale}/work` },
+    { name_es: "Contacto" ,name_en: "contact", path: `/${locale}/contact` },
+  ];
   return (
     <Sheet open={toggle} onOpenChange={(open) => setToggle(open)}>
       <SheetTrigger className="flex justify-center items-center">
@@ -39,7 +39,7 @@ export const MobileNav = () => {
         </SheetTitle>
         <SheetDescription aria-label="hidden"></SheetDescription>
         <nav className="flex flex-col items-center gap-4 h-sreen">
-          <LocaleSwitcher mobile={true}/>
+          <LocaleSwitcher mobile={true} />
           {links.map((link, index) => (
             <Link
               onClick={() => setToggle(false)}
@@ -49,7 +49,7 @@ export const MobileNav = () => {
                 link.path === pathname && "text-accent border-b-2 border-accent"
               }text-xl capitalize hover:text-accent transition-all`}
             >
-              {link.name}
+              {locale === "es" ? link.name_es : link.name_en}
             </Link>
           ))}
         </nav>

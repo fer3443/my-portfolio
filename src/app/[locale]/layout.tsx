@@ -73,7 +73,7 @@ export default async function RootLayout({
     <html lang={locale}>
       <body className={`${jetbrainsMono.variable} antialiased`}>
         <NextIntlClientProvider>
-          <Header />
+          <Header locale={locale} />
           <StairTransition />
           <PageTransition>{children}</PageTransition>
           <Toaster />
