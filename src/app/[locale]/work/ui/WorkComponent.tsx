@@ -16,44 +16,21 @@ import {
 } from "@/components";
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
-const projects = [
-  {
-    num: "01",
-    category: "Frontend",
-    title: "Movil Renta",
-    description:
-      "Participe como desarrollador Frontend en la aplicación Movil Renta, un sitio enfacado en la renta de automoviles mediante reservas, con la integracion de Payway para el pago del servicio.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Typescript" },{ name: "Zustand"}],
-    image: "/mockup-rentacar.png",
-    live: "https://car-movilrenta.vercel.app/home",
-    github: "https://github.com/fer3443",
-  },
-  {
-    num: "02",
-    category: "Full Stack",
-    title: "Comic Store",
-    description:
-      "En este proyecto participe tanto en el desarrollo Frontend, como Backend. Para la UI utilizamos componentes provistos por shadcn junto a tailwind y la incorporacion de MercadoPago para efectuar la compra de productos. Mi tareas como backender fueron realizar el crud de autenticación del usuario, con JWT, hasheo de informacion mediante bcrypt y el uso de cookies.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Shadcn" }, {name: "MongoDb"}, {name: "Zustand"}],
-    image: "/mockup_benemex.png",
-    live: "https://www.benemexcomicstoree.ar/",
-    github: "https://github.com/fer3443",
-  },
-  {
-    num: "03",
-    category: "Full Stack",
-    title: "Arroyo Shop",
-    description:
-      "Tienda online, creada a partir del diseño de Tesla - Shop, como practica para el aprendizaje y perfeccionamiento de Next.js, con gran cantidad de componentes generados como server side, incorporacion de PayPal y zustand como gestor de estado global. Con Next Auth para la creacion y autenticacion de usuarios. Uso de ORM Prisma y como base de datos PostgresSQL.",
-    stack: [{ name: "Next.js" }, {name: "Zustand"},{name:"Prisma"},{name:"PostgresSql"}],
-    image: "/mockup-arroyoshop.png",
-    live: "/",
-    github: "https://github.com/fer3443/arroyo-shop",
-  },
-];
-
+interface Projects {
+  num:string;
+  category:string;
+  title:string;
+  description:string;
+  stack: {name:string}[];
+  image:string;
+  live:string;
+  github:string
+}
 export const WorkComponent = () => {
+  const t = useTranslations('WorkPage');
+  const projects:Projects[] = t.raw('projects');
   const [project, setProject] = React.useState(projects[0]);
 
   const handleSlideChange = (swiper: SwiperObject) => {
@@ -96,7 +73,7 @@ export const WorkComponent = () => {
               <div className="border border-white/20" />
               {/*buttons */}
               <div className="flex items-center gap-4">
-                <Link href={project.live}>
+                <Link href={project.live} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[60px] h-[60px] rounded-full bg-white/5 flex justify-center items-center group">
