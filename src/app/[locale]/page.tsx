@@ -28,7 +28,7 @@ export default async function HomePage() {
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
-                <a href="/Fernando_Arroyo_Rodriguez-Cv.pdf" download="Fernando_Arroyo_CV.pdf">{t("downloadCv")}</a>
+                <a href="/Fernando_Maximiliano_Arroyo.pdf" download="Fernando_Maximiliano_Arroyo.pdf">{t("downloadCv")}</a>
                 <FiDownload className="text-xl" />
               </Button>
               <div className="mb-8 xl:mb-0">
