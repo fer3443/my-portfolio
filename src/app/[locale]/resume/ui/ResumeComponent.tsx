@@ -8,6 +8,7 @@ import {
   SiMongodb,
   SiTailwindcss,
   SiTypescript,
+  SiNestjs
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import {
@@ -74,6 +75,10 @@ const skills = {
       icon: <BiLogoPostgresql />,
       name: "PostgresSql",
     },
+    {
+      icon:<SiNestjs/>,
+      name: "NestJs"
+    }
   ],
 };
 
