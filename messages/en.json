@@ -4,20 +4,19 @@
       "0": "Hi I am",
       "1": "Fernando Arroyo"
     },
-    "subtitle": "Full Stack Developer",
-    "description": "With a strong focus on front-end development and a deep interest in UX/UI design, I’m passionate about turning ideas into functional and engaging digital experiences. I work with technologies like React, Next.js, and TypeScript. I’m always eager to learn and grow, taking every project to the next level. Check out my work and get to know me!",
+    "subtitle": "Frontend Developer",
+    "description": "Frontend Developer specialized in React, Next.js and TypeScript, with experience building responsive interfaces, forms and validations, tables, reusable components and role- and permission-based flows. I work alongside UI/UX and Backend teams, integrating applications with APIs and external services. Explore my work and get to know me!",
     "downloadCv": "Download CV"
   },
   "ContactPage": {
     "title": "Let's work together",
     "description": "Do you have an idea in mind? Want to make your business, venture, or brand known online? Or maybe you're simply looking to automate your work. Get in touch through any of these channels—I'm at your service.",
     "info": {
-      "phone": "Phone",
       "email": "Email",
       "address": "Address"
     },
     "form": {
-      "placeHolders":{
+      "placeHolders": {
         "firstname": "First Name",
         "lastname": "Last Name",
         "email": "Email",
@@ -25,8 +24,8 @@
         "typeService": "Select a service",
         "message": "Write your message here."
       },
-      "selects":{
-        "typeServices":{
+      "selects": {
+        "typeServices": {
           "webDevelopment": "Web Developer",
           "uxDesing": "UX/UI Design"
         }
@@ -59,15 +58,11 @@
   "ResumePage": {
     "aboutMe": {
       "title": "About Me",
-      "description": "Hi! I’m Fernando Arroyo, a full stack developer with a focus on front-end, although I have solid experience in backend as well. My main stack is MERN (MongoDB, Express, React, Node.js), and over the years I’ve added tools like Next.js, Prisma, PostgreSQL, and TypeScript.",
+      "description": "Hi! I’m Fernando Arroyo, a Frontend developer specialized in React, Next.js and TypeScript. I have experience building and maintaining web applications and business features, and integrating applications with APIs and external services. My backend knowledge (Node.js, NestJS, Prisma) and databases (PostgreSQL, MongoDB) allow me to understand end-to-end application development.",
       "info": [
         {
           "fieldName": "Name",
           "fieldValue": "Fernando Arroyo"
-        },
-        {
-          "fieldName": "Phone",
-          "fieldValue": "(+54) 381 4168 878"
         },
         {
           "fieldName": "Experience",
@@ -92,14 +87,14 @@
       "description": "I’ve had the opportunity to work both independently and collaboratively. Both have contributed to my personal and professional growth.",
       "items": [
         {
-          "company": "Freelance",
-          "position": "Full Stack Developer",
-          "duration": "2021 - Present"
+          "company": "Bilog",
+          "position": "Frontend Developer",
+          "duration": "Jan 2026 - Aug 2026"
         },
         {
-          "company": "Smart Solutions",
-          "position": "Full Stack Developer",
-          "duration": "2022 - Present"
+          "company": "Movil Renta",
+          "position": "Full Stack Developer (Freelance)",
+          "duration": "Oct 2023 - Dec 2025"
         }
       ]
     },
@@ -110,22 +105,37 @@
         {
           "institution": "RollingCode School",
           "degree": "Full Stack Developer Bootcamp",
-          "duration": "2021 - 2022"
+          "duration": "Jan 2022"
         },
         {
-          "institution": "DevTalles",
-          "degree": "Certified: TypeScript",
-          "duration": "2024"
+          "institution": "RollingCode School",
+          "degree": "Advanced React",
+          "duration": "Apr 2024"
         },
         {
-          "institution": "DevTalles",
+          "institution": "Devtalles",
           "degree": "Certified: Next.js",
-          "duration": "2024"
+          "duration": ""
         },
         {
-          "institution": "Codo A Codo",
-          "degree": "Certified: UX Design",
-          "duration": "2023 - 2024"
+          "institution": "Devtalles",
+          "degree": "Certified: TanStack Query",
+          "duration": ""
+        },
+        {
+          "institution": "Devtalles",
+          "degree": "Certified: Zustand",
+          "duration": ""
+        },
+        {
+          "institution": "Devtalles",
+          "degree": "Certified: Relational Databases",
+          "duration": ""
+        },
+        {
+          "institution": "Devtalles",
+          "degree": "Certified: NestJS",
+          "duration": ""
         }
       ]
     },
@@ -140,13 +150,13 @@
         "num": "01",
         "title": "Web Development",
         "description": "With over three years of experience building web applications, landing pages, e-commerce sites, and more, we can bring your idea, venture, or brand to life on the web. Already have a website and looking for a refresh? I can help with that too.",
-        "href":""
+        "href": ""
       },
       {
         "num": "02",
         "title": "UX/UI Design",
         "description": "With knowledge in UX/UI design, I’m committed to making your brand’s or venture’s message effective. I focus on crafting solutions tailored to the specific problem. 'Design is a way to communicate.'",
-        "href":""
+        "href": ""
       },
       {
         "num": "03",
@@ -164,10 +174,18 @@
         "title": "Movil Renta",
         "description": "I participated as a Frontend developer in the Movil Renta application, a platform focused on car rentals through reservations, with Payway integration for payment processing.",
         "stack": [
-          { "name": "Next.js" },
-          { "name": "Tailwind.css" },
-          { "name": "Typescript" },
-          { "name": "Zustand" }
+          {
+            "name": "Next.js"
+          },
+          {
+            "name": "Tailwind.css"
+          },
+          {
+            "name": "Typescript"
+          },
+          {
+            "name": "Zustand"
+          }
         ],
         "image": "/mockup-rentacar.png",
         "live": "https://www.movilrenta.com.ar/es",
@@ -179,11 +197,21 @@
         "title": "Comic Store",
         "description": "In this project, I worked on both the Frontend and Backend. For the UI, we used components provided by Shadcn along with Tailwind, and integrated MercadoPago to handle product purchases. On the backend, I implemented the user authentication CRUD using JWT, password hashing with bcrypt, and cookie handling.",
         "stack": [
-          { "name": "Next.js" },
-          { "name": "Tailwind.css" },
-          { "name": "Shadcn" },
-          { "name": "MongoDb" },
-          { "name": "Zustand" }
+          {
+            "name": "Next.js"
+          },
+          {
+            "name": "Tailwind.css"
+          },
+          {
+            "name": "Shadcn"
+          },
+          {
+            "name": "MongoDb"
+          },
+          {
+            "name": "Zustand"
+          }
         ],
         "image": "/mockup_benemex.png",
         "live": "https://www.benemexcomicstoree.ar/",
@@ -195,10 +223,18 @@
         "title": "Arroyo Shop",
         "description": "Online store created as a practice project inspired by Tesla Shop, aiming to learn and master Next.js. Includes numerous server-side components, PayPal integration, and Zustand for global state management. Uses NextAuth for user registration and authentication, Prisma ORM, and PostgreSQL as the database.",
         "stack": [
-          { "name": "Next.js" },
-          { "name": "Zustand" },
-          { "name": "Prisma" },
-          { "name": "PostgresSql" }
+          {
+            "name": "Next.js"
+          },
+          {
+            "name": "Zustand"
+          },
+          {
+            "name": "Prisma"
+          },
+          {
+            "name": "PostgresSql"
+          }
         ],
         "image": "/mockup-arroyoshop.png",
         "live": "/",
@@ -207,11 +243,11 @@
     ]
   },
   "sendEmails": {
-    "success":{
+    "success": {
       "message": "Your message was sent successfully",
       "message2": "I will get in touch with you soon"
     },
-    "error":{
+    "error": {
       "message1": "There was a problem sending the message, please try again",
       "message2": "Internal server error",
       "message3": "Please contact me through other available channels"
