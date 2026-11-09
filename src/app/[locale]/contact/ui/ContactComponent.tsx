@@ -19,7 +19,7 @@ import {
 } from "@/components";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 import { motion } from "framer-motion";
 import { FormValues, getFormSchema } from "@/types";
@@ -46,11 +46,6 @@ export const ContactComponent = () => {
   });
 
   const info = [
-    {
-      icon: <FaPhoneAlt />,
-      title: t("info.phone"),
-      description: "(+54) 381 4168 878",
-    },
     {
       icon: <FaEnvelope />,
       title: t("info.email"),
