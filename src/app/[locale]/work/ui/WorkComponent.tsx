@@ -110,7 +110,7 @@ export const WorkComponent = () => {
             >
               {projects.map((project, index) => (
                 <SwiperSlide key={index}>
-                  <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                  <div className="aspect-[16/10] xl:aspect-auto xl:h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                     {/* overlay*/}
                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10" />
                     {/* Image */}
