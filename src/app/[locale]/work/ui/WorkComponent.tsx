@@ -86,7 +86,7 @@ export const WorkComponent = () => {
                   </TooltipProvider>
                 </Link>
                 {/* github project*/}
-                <Link href={project.live}>
+                <Link href={project.github} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[60px] h-[60px] rounded-full bg-white/5 flex justify-center items-center group">
