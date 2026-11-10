@@ -36,3 +36,11 @@ The root layout (`[locale]/layout.tsx`) validates the locale, wraps everything i
 `ContactComponent` uses react-hook-form + zod. The schema is built by `getFormSchema(t)` in `src/types/zod.schema.interface.ts`, which takes a translator for `ContactPage.form.validations` so error messages are localized. Submission calls `sendEmail` (`src/actions/send-email.ts`), which sends **client-side via `@emailjs/browser`** (not a server action despite the folder name) and returns localized toast messages hardcoded per locale. Requires env vars `NEXT_PUBLIC_SERVICE_ID`, `NEXT_PUBLIC_TEMPLATE_ID`, `NEXT_PUBLIC_KEY`.
 
 The downloadable CV is `public/Fernando_Arroyo_CV.pdf`.
+
+## Git workflow
+
+- **Branches:** `main` = production (Vercel), `dev` = integration. Never commit directly to either. Work branches are created from an up-to-date `dev`: `feature/<desc>`, `fix/<desc>`, `docs/<desc>`, `chore/<desc>` (kebab-case). Emergency `hotfix/<desc>` branches start from `main`, go to `main` via PR, then `main` is merged back into `dev`.
+- **Integration:** work branch → `dev` via PR with **squash merge** (one Conventional Commit per feature). `dev` → `main` via PR with a **merge commit** (release). Delete work branches after merging.
+- **Commits:** Conventional Commits in **Spanish**, imperative, lowercase: `tipo(scope opcional): descripción`. Types: `feat`, `fix`, `docs`, `style`, `refactor`, `chore`, `perf`. Keep commits small; `npm run build` and `npm run lint` must pass before pushing or opening a PR.
+- **What Claude may do without asking:** create work branches, commit on them, and push work branches to `origin`.
+- **Ask first:** opening PRs, merging, pushing to `dev`/`main`, deleting branches, rebase/force-push or any other destructive git operation.
