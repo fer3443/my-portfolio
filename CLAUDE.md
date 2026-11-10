@@ -44,3 +44,7 @@ The downloadable CV is `public/Fernando_Arroyo_CV.pdf`.
 - **Commits:** Conventional Commits in **Spanish**, imperative, lowercase: `tipo(scope opcional): descripción`. Types: `feat`, `fix`, `docs`, `style`, `refactor`, `chore`, `perf`. Keep commits small; `npm run build` and `npm run lint` must pass before pushing or opening a PR.
 - **What Claude may do without asking:** create work branches, commit on them, and push work branches to `origin`.
 - **Ask first:** opening PRs, merging, pushing to `dev`/`main`, deleting branches, rebase/force-push or any other destructive git operation.
+
+## Verifying changes
+
+Every implemented change that affects the UI must be checked in the browser (dev server + Playwright) before committing/opening a PR, at **desktop** (e.g. 1440×900) and **mobile** (e.g. 390×844) widths, and in both locales (`/es`, `/en`) when translated content changed. Report what was seen; passing `build`/`lint` alone is not enough.
