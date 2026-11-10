@@ -35,4 +35,4 @@ The root layout (`[locale]/layout.tsx`) validates the locale, wraps everything i
 
 `ContactComponent` uses react-hook-form + zod. The schema is built by `getFormSchema(t)` in `src/types/zod.schema.interface.ts`, which takes a translator for `ContactPage.form.validations` so error messages are localized. Submission calls `sendEmail` (`src/actions/send-email.ts`), which sends **client-side via `@emailjs/browser`** (not a server action despite the folder name) and returns localized toast messages hardcoded per locale. Requires env vars `NEXT_PUBLIC_SERVICE_ID`, `NEXT_PUBLIC_TEMPLATE_ID`, `NEXT_PUBLIC_KEY`.
 
-The downloadable CV is `public/Fernando_Maximiliano_Arroyo.pdf`.
+The downloadable CV is `public/Fernando_Arroyo_CV.pdf`.
