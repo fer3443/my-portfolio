@@ -194,51 +194,25 @@
       {
         "num": "02",
         "category": "Full Stack",
-        "title": "Comic Store",
-        "description": "In this project, I worked on both the Frontend and Backend. For the UI, we used components provided by Shadcn along with Tailwind, and integrated MercadoPago to handle product purchases. On the backend, I implemented the user authentication CRUD using JWT, password hashing with bcrypt, and cookie handling.",
+        "title": "Precios Claros",
+        "description": "An application that simplifies the management of small businesses, allowing products, stock and prices to be managed from a single place.",
         "stack": [
           {
             "name": "Next.js"
           },
           {
-            "name": "Tailwind.css"
+            "name": "Docker"
           },
           {
-            "name": "Shadcn"
+            "name": "Supabase"
           },
           {
-            "name": "MongoDb"
-          },
-          {
-            "name": "Zustand"
+            "name": "PostgreSQL"
           }
         ],
-        "image": "/mockup_benemex.png",
-        "live": "https://www.benemexcomicstoree.ar/",
-        "github": "https://github.com/fer3443"
-      },
-      {
-        "num": "03",
-        "category": "Full Stack",
-        "title": "Arroyo Shop",
-        "description": "Online store created as a practice project inspired by Tesla Shop, aiming to learn and master Next.js. Includes numerous server-side components, PayPal integration, and Zustand for global state management. Uses NextAuth for user registration and authentication, Prisma ORM, and PostgreSQL as the database.",
-        "stack": [
-          {
-            "name": "Next.js"
-          },
-          {
-            "name": "Zustand"
-          },
-          {
-            "name": "Prisma"
-          },
-          {
-            "name": "PostgresSql"
-          }
-        ],
-        "image": "/mockup-arroyoshop.png",
-        "live": "/",
-        "github": "https://github.com/fer3443/arroyo-shop"
+        "image": "/card-screen-pc.png",
+        "live": "https://precios-claros-eta.vercel.app/",
+        "github": "https://github.com/fer3443/precios-claros"
       }
     ]
   },
