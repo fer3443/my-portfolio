@@ -6,7 +6,11 @@ Memoria entre sesiones. Reglas de uso: ver sección "Memory" en `AGENTS.md`.
 
 - Último release en producción: #18 (2026-11-11), deploy de Vercel OK. Incluye home renovada + Precios Claros (#14), fixes mobile del carrusel de `/work` (#15, #16) y esta memoria + `AGENTS.md` (#17).
 - `dev` y `main` sincronizados tras el release (fast-forward de `dev` a `main`). 
-- Pendiente: la rama `docs/actualizar-memoria` (solo `MEMORY.md`, sin PR) se integra junto al próximo cambio: crear la nueva rama desde ella o mergearla en la nueva antes del PR.
+- En curso: `fix/navbar-contacto-duplicado` (creada desde `docs/actualizar-memoria`, que queda absorbida). Quita "Contacto" del nav desktop porque duplicaba el botón "Contactame"; el menú mobile conserva "Contacto".
+
+## Errores conocidos sin resolver
+
+- El botón desktop dice "Conctactame" (typo) y los navs usan `next/link`/`next/navigation` en vez de `@/i18n/navigation`.
 
 ## Decisiones (y por qué)
 

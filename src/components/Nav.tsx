@@ -11,7 +11,6 @@ export const Nav = ({locale}:{locale:'es' |'en'}) => {
     { name_es: "Servicios" ,name_en: "services", path: `/${locale}/services` },
     { name_es: "Resumen" ,name_en: "resume", path: `/${locale}/resume` },
     { name_es: "Trabajos" ,name_en: "work", path: `/${locale}/work` },
-    { name_es: "Contacto" ,name_en: "contact", path: `/${locale}/contact` },
   ];
   return (
     <nav className="flex gap-8">
