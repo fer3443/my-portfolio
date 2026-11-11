@@ -5,7 +5,8 @@ Memoria entre sesiones. Reglas de uso: ver sección "Memory" en `AGENTS.md`.
 ## Estado actual
 
 - Último release en producción: #18 (2026-11-11), deploy de Vercel OK. Incluye home renovada + Precios Claros (#14), fixes mobile del carrusel de `/work` (#15, #16) y esta memoria + `AGENTS.md` (#17).
-- `dev` y `main` sincronizados tras el release (fast-forward de `dev` a `main`). Sin trabajo pendiente.
+- `dev` y `main` sincronizados tras el release (fast-forward de `dev` a `main`). 
+- Pendiente: la rama `docs/actualizar-memoria` (solo `MEMORY.md`, sin PR) se integra junto al próximo cambio: crear la nueva rama desde ella o mergearla en la nueva antes del PR.
 
 ## Decisiones (y por qué)
 
