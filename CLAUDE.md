@@ -2,6 +2,8 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+@AGENTS.md
+
 ## Commands
 
 - `npm run dev` — dev server with Turbopack (http://localhost:3000)
