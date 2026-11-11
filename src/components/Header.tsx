@@ -16,9 +16,11 @@ export const Header = ({locale}:{locale:'es'|'en'}) => {
         {/* desktop nav */}
         <div className="hidden xl:flex items-center gap-8">
           <Nav locale={locale}/>
-          <Link href={`/${locale}/contact`}>
-            <Button>{locale === 'es' ? 'Conctactame' :  'Contact me'}</Button>
-          </Link>
+          <Button asChild>
+            <Link href={`/${locale}/contact`}>
+              {locale === 'es' ? 'Contactame' : 'Contact me'}
+            </Link>
+          </Button>
         </div>
 
         {/* mobile nav */}
