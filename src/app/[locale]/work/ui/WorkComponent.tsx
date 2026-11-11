@@ -86,7 +86,7 @@ export const WorkComponent = () => {
                   </TooltipProvider>
                 </Link>
                 {/* github project*/}
-                <Link href={project.live}>
+                <Link href={project.github} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[60px] h-[60px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -110,7 +110,7 @@ export const WorkComponent = () => {
             >
               {projects.map((project, index) => (
                 <SwiperSlide key={index}>
-                  <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                  <div className="aspect-[16/10] xl:aspect-auto xl:h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                     {/* overlay*/}
                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10" />
                     {/* Image */}
@@ -126,7 +126,7 @@ export const WorkComponent = () => {
                 </SwiperSlide>
               ))}
               {/* slider buttons */}
-              <WorkSliderBtns containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none" btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"/>
+              <WorkSliderBtns containerStyles="flex gap-2 justify-end mt-4 z-20 xl:mt-0 xl:absolute xl:right-0 xl:bottom-0 xl:w-max" btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"/>
             </Swiper>
           </div>
         </div>

@@ -5,7 +5,7 @@
       "1": "Fernando Arroyo"
     },
     "subtitle": "Desarrollador Frontend",
-    "description": "Desarrollador Frontend especializado en React, Next.js y TypeScript, con experiencia en el desarrollo de interfaces responsivas, formularios y validaciones, tablas, componentes reutilizables y flujos basados en roles y permisos. Trabajo en colaboración con equipos de UI/UX y Backend, integrando aplicaciones con APIs y servicios externos. ¡Explora mi trabajo y conoce más sobre mí!",
+    "description": "Soy desarrollador web, con especial interés en el frontend y en crear experiencias digitales que sean intuitivas, funcionales y agradables de usar. Disfruto transformar ideas en productos, cuidar cada detalle de la interfaz y encontrar soluciones que hagan más simple la vida de quienes las utilizan.",
     "downloadCv": "Descargar CV"
   },
   "ContactPage": {
@@ -194,51 +194,25 @@
       {
         "num": "02",
         "category": "Full Stack",
-        "title": "Comic Store",
-        "description": "En este proyecto participe tanto en el desarrollo Frontend, como Backend. Para la UI utilizamos componentes provistos por shadcn junto a tailwind y la incorporacion de MercadoPago para efectuar la compra de productos. Mi tareas como backender fueron realizar el crud de autenticación del usuario, con JWT, hasheo de informacion mediante bcrypt y el uso de cookies.",
+        "title": "Precios Claros",
+        "description": "Una aplicación que simplifica la gestión de pequeños comercios, permitiendo administrar productos, stock y precios desde un solo lugar.",
         "stack": [
           {
             "name": "Next.js"
           },
           {
-            "name": "Tailwind.css"
+            "name": "Docker"
           },
           {
-            "name": "Shadcn"
+            "name": "Supabase"
           },
           {
-            "name": "MongoDb"
-          },
-          {
-            "name": "Zustand"
+            "name": "PostgreSQL"
           }
         ],
-        "image": "/mockup_benemex.png",
-        "live": "https://www.benemexcomicstoree.ar/",
-        "github": "https://github.com/fer3443"
-      },
-      {
-        "num": "03",
-        "category": "Full Stack",
-        "title": "Arroyo Shop",
-        "description": "Tienda online, creada a partir del diseño de Tesla - Shop, como practica para el aprendizaje y perfeccionamiento de Next.js, con gran cantidad de componentes generados como server side, incorporacion de PayPal y zustand como gestor de estado global. Con Next Auth para la creacion y autenticacion de usuarios. Uso de ORM Prisma y como base de datos PostgresSQL.",
-        "stack": [
-          {
-            "name": "Next.js"
-          },
-          {
-            "name": "Zustand"
-          },
-          {
-            "name": "Prisma"
-          },
-          {
-            "name": "PostgresSql"
-          }
-        ],
-        "image": "/mockup-arroyoshop.png",
-        "live": "/",
-        "github": "https://github.com/fer3443/arroyo-shop"
+        "image": "/card-screen-pc.png",
+        "live": "https://precios-claros-eta.vercel.app/",
+        "github": "https://github.com/fer3443/precios-claros"
       }
     ]
   },
